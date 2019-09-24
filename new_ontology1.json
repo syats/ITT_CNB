@@ -1,0 +1,571 @@
+{
+  "_comment": "Empty ontology for WebVOWL Editor [Additional Information added by WebVOWL Exporter Version: 1.1.5]",
+  "header": {
+    "languages": [
+      "en"
+    ],
+    "baseIris": [
+      "http://www.w3.org/2000/01/rdf-schema"
+    ],
+    "iri": "http://vocabularios.conacyt.mx/angelus/",
+    "title": "Angelus",
+    "description": {
+      "en": "New ontology description"
+    }
+  },
+  "namespace": [],
+  "settings": {
+    "global": {
+      "zoom": "0.69",
+      "translation": [
+        180.4,
+        110.97
+      ],
+      "paused": false
+    },
+    "gravity": {
+      "classDistance": 200,
+      "datatypeDistance": 120
+    },
+    "filter": {
+      "checkBox": [
+        {
+          "id": "datatypeFilterCheckbox",
+          "checked": false
+        },
+        {
+          "id": "objectPropertyFilterCheckbox",
+          "checked": false
+        },
+        {
+          "id": "subclassFilterCheckbox",
+          "checked": false
+        },
+        {
+          "id": "disjointFilterCheckbox",
+          "checked": true
+        },
+        {
+          "id": "setoperatorFilterCheckbox",
+          "checked": false
+        }
+      ],
+      "degreeSliderValue": "0"
+    },
+    "modes": {
+      "checkBox": [
+        {
+          "id": "pickandpinModuleCheckbox",
+          "checked": false
+        },
+        {
+          "id": "nodescalingModuleCheckbox",
+          "checked": true
+        },
+        {
+          "id": "compactnotationModuleCheckbox",
+          "checked": false
+        },
+        {
+          "id": "colorexternalsModuleCheckbox",
+          "checked": true
+        }
+      ],
+      "colorSwitchState": false
+    }
+  },
+  "class": [
+    {
+      "id": "Class1",
+      "type": "owl:Class"
+    },
+    {
+      "id": "Class2",
+      "type": "owl:Class"
+    },
+    {
+      "id": "Class3",
+      "type": "owl:Class"
+    },
+    {
+      "id": "Class4",
+      "type": "owl:Class"
+    },
+    {
+      "id": "Class5",
+      "type": "owl:Class"
+    },
+    {
+      "id": "Class6",
+      "type": "owl:Class"
+    },
+    {
+      "id": "Class7",
+      "type": "owl:Class"
+    },
+    {
+      "id": "Class10",
+      "type": "owl:Class"
+    },
+    {
+      "id": "Class11",
+      "type": "owl:Class"
+    },
+    {
+      "id": "Class12",
+      "type": "owl:Class"
+    }
+  ],
+  "classAttribute": [
+    {
+      "id": "Class1",
+      "iri": "http://visualdataweb.org/newOntology/Persona",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "Persona",
+      "pos": [
+        394.83,
+        142.92
+      ]
+    },
+    {
+      "id": "Class2",
+      "iri": "http://visualdataweb.org/newOntology/Documento",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "Documento",
+      "pos": [
+        756.89,
+        76.22
+      ]
+    },
+    {
+      "id": "Class3",
+      "iri": "http://visualdataweb.org/newOntology/TipoDoc",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "Tipo de Documento",
+      "pos": [
+        1119.05,
+        -3.32
+      ]
+    },
+    {
+      "id": "Class4",
+      "iri": "http://visualdataweb.org/newOntology/Etiqueta",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "Etiqueta",
+      "pos": [
+        1067.67,
+        302.25
+      ]
+    },
+    {
+      "id": "Class5",
+      "iri": "http://visualdataweb.org/newOntology/Lugar",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "Lugar",
+      "pos": [
+        513.53,
+        480.49
+      ]
+    },
+    {
+      "id": "Class6",
+      "iri": "http://visualdataweb.org/newOntology/Organización",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "Organización",
+      "pos": [
+        587.64,
+        -240.09
+      ]
+    },
+    {
+      "id": "Class7",
+      "iri": "http://vocabularios.conacyt.mx/angelus/AgenteEstatal",
+      "baseIri": "http://vocabularios.conacyt.mx/angelus",
+      "label": "Agente del Estado",
+      "pos": [
+        64.71,
+        -43.17
+      ]
+    },
+    {
+      "id": "Class10",
+      "iri": "http://vocabularios.conacyt.mx/angelus/SujetoVigilado",
+      "baseIri": "http://vocabularios.conacyt.mx/angelus/",
+      "label": "SujetoVigilado",
+      "pos": [
+        197.33,
+        488.99
+      ]
+    },
+    {
+      "id": "Class11",
+      "iri": "http://vocabularios.conacyt.mx/angelus/Desaparecido",
+      "baseIri": "http://vocabularios.conacyt.mx/angelus/",
+      "label": "Desaparecido",
+      "pos": [
+        34.79,
+        290.04
+      ]
+    },
+    {
+      "id": "Class12",
+      "iri": "http://vocabularios.conacyt.mx/angelus/Evento",
+      "baseIri": "http://vocabularios.conacyt.mx/angelus/",
+      "label": "Evento",
+      "pos": [
+        785.77,
+        416.37
+      ]
+    }
+  ],
+  "property": [
+    {
+      "id": "objectProperty1",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "objectProperty3",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "objectProperty5",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "objectProperty6",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "objectProperty7",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "objectProperty8",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "objectProperty9",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "objectProperty11",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "objectProperty12",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "objectProperty13",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "objectProperty14",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "objectProperty15",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "objectProperty16",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "objectProperty17",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "objectProperty18",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "objectProperty19",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "objectProperty20",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "objectProperty21",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "objectProperty22",
+      "type": "owl:ObjectProperty"
+    }
+  ],
+  "propertyAttribute": [
+    {
+      "id": "objectProperty1",
+      "iri": "http://visualdataweb.org/newOntology/autorDe",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "esAutorDe",
+      "attributes": [
+        "object"
+      ],
+      "domain": "Class1",
+      "range": "Class2",
+      "pos": [
+        563.07,
+        42.93
+      ]
+    },
+    {
+      "id": "objectProperty3",
+      "iri": "http://visualdataweb.org/newOntology/mencionaPersona",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "menciona Persona",
+      "domain": "Class2",
+      "range": "Class1",
+      "pos": [
+        583.95,
+        152.13
+      ]
+    },
+    {
+      "id": "objectProperty5",
+      "iri": "http://visualdataweb.org/newOntology/firmadoPor",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "está Firmado Por",
+      "domain": "Class2",
+      "range": "Class1",
+      "pos": [
+        573.2,
+        94.09
+      ]
+    },
+    {
+      "id": "objectProperty6",
+      "iri": "http://visualdataweb.org/newOntology/tieneTipo",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "tiene tipo de documento",
+      "attributes": [
+        "object"
+      ],
+      "domain": "Class2",
+      "range": "Class3",
+      "pos": [
+        937.97,
+        36.45
+      ]
+    },
+    {
+      "id": "objectProperty7",
+      "iri": "http://visualdataweb.org/newOntology/trataDe",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "Trata De",
+      "attributes": [
+        "object"
+      ],
+      "domain": "Class2",
+      "range": "Class4",
+      "pos": [
+        912.28,
+        189.24
+      ]
+    },
+    {
+      "id": "objectProperty8",
+      "iri": "http://visualdataweb.org/newOntology/mencionaLugar",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "menciona  Lugar",
+      "attributes": [
+        "object"
+      ],
+      "domain": "Class2",
+      "range": "Class5",
+      "pos": [
+        635.21,
+        278.36
+      ]
+    },
+    {
+      "id": "objectProperty9",
+      "iri": "http://visualdataweb.org/newOntology/mencionaOrganización",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "menciona Organización",
+      "attributes": [
+        "object"
+      ],
+      "domain": "Class2",
+      "range": "Class6",
+      "pos": [
+        749.6,
+        -127.23
+      ]
+    },
+    {
+      "id": "objectProperty11",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#subClassOf",
+      "baseIri": "http://www.w3.org/2000/01/rdf-schema#",
+      "label": "Subclass of",
+      "domain": "Class7",
+      "range": "Class1",
+      "pos": [
+        229.77,
+        49.88
+      ]
+    },
+    {
+      "id": "objectProperty12",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#subClassOf",
+      "baseIri": "http://www.w3.org/2000/01/rdf-schema#",
+      "label": "Subclass of",
+      "domain": "Class10",
+      "range": "Class1",
+      "pos": [
+        296.08,
+        315.96
+      ]
+    },
+    {
+      "id": "objectProperty13",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#subClassOf",
+      "baseIri": "http://www.w3.org/2000/01/rdf-schema#",
+      "label": "Subclass of",
+      "domain": "Class11",
+      "range": "Class1",
+      "pos": [
+        214.81,
+        216.48
+      ]
+    },
+    {
+      "id": "objectProperty14",
+      "iri": "http://vocabularios.conacyt.mx/angelus/capturadoEn",
+      "baseIri": "http://vocabularios.conacyt.mx/angelus/",
+      "label": "Capturado En",
+      "attributes": [
+        "object"
+      ],
+      "domain": "Class1",
+      "range": "Class5",
+      "pos": [
+        454.18,
+        311.71
+      ]
+    },
+    {
+      "id": "objectProperty15",
+      "iri": "http://vocabularios.conacyt.mx/angelus/emitidoPor",
+      "baseIri": "http://vocabularios.conacyt.mx/angelus/",
+      "label": "Emitido Por",
+      "attributes": [
+        "object"
+      ],
+      "domain": "Class2",
+      "range": "Class6",
+      "pos": [
+        697.36,
+        -101.02
+      ]
+    },
+    {
+      "id": "objectProperty16",
+      "iri": "http://vocabularios.conacyt.mx/angelus/ocurreEn",
+      "baseIri": "http://vocabularios.conacyt.mx/angelus/",
+      "label": "ocurre En",
+      "attributes": [
+        "object"
+      ],
+      "domain": "Class12",
+      "range": "Class5",
+      "pos": [
+        649.65,
+        448.43
+      ]
+    },
+    {
+      "id": "objectProperty17",
+      "iri": "http://vocabularios.conacyt.mx/angelus/adscritoA",
+      "baseIri": "http://vocabularios.conacyt.mx/angelus/",
+      "label": "adscrito A",
+      "attributes": [
+        "object"
+      ],
+      "domain": "Class1",
+      "range": "Class6",
+      "pos": [
+        491.24,
+        -48.58
+      ]
+    },
+    {
+      "id": "objectProperty18",
+      "iri": "http://vocabularios.conacyt.mx/angelus/perpetradorDe",
+      "baseIri": "http://vocabularios.conacyt.mx/angelus/",
+      "label": "perpetrador De",
+      "attributes": [
+        "object"
+      ],
+      "domain": "Class1",
+      "range": "Class1",
+      "pos": [
+        333.26,
+        285.36
+      ]
+    },
+    {
+      "id": "objectProperty19",
+      "iri": "http://vocabularios.conacyt.mx/angelus/conoce A",
+      "baseIri": "http://vocabularios.conacyt.mx/angelus/",
+      "label": "conoce A",
+      "attributes": [
+        "object"
+      ],
+      "domain": "Class1",
+      "range": "Class1",
+      "pos": [
+        236.83,
+        120.23
+      ]
+    },
+    {
+      "id": "objectProperty20",
+      "iri": "http://vocabularios.conacyt.mx/angelus/perteneceA",
+      "baseIri": "http://vocabularios.conacyt.mx/angelus/",
+      "label": "pertenece A",
+      "attributes": [
+        "object"
+      ],
+      "domain": "Class6",
+      "range": "Class6",
+      "pos": [
+        556.55,
+        -396.93
+      ]
+    },
+    {
+      "id": "objectProperty21",
+      "iri": "http://vocabularios.conacyt.mx/angelus/mencionaEvento",
+      "baseIri": "http://vocabularios.conacyt.mx/angelus/",
+      "label": "menciona Evento",
+      "attributes": [
+        "object"
+      ],
+      "domain": "Class2",
+      "range": "Class12",
+      "pos": [
+        771.33,
+        246.29
+      ]
+    },
+    {
+      "id": "objectProperty22",
+      "iri": "http://vocabularios.conacyt.mx/angelus/participaEn",
+      "baseIri": "http://vocabularios.conacyt.mx/angelus/",
+      "label": "participa En",
+      "attributes": [
+        "object"
+      ],
+      "domain": "Class1",
+      "range": "Class12",
+      "pos": [
+        590.3,
+        279.65
+      ]
+    }
+  ]
+}

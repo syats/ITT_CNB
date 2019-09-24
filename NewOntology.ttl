@@ -1,0 +1,136 @@
+#################################################################
+###  Generated with the experimental alpha version of the TTL exporter of WebVOWL (version 1.1.3)  http://visualdataweb.de/webvowl/   ###
+#################################################################
+
+@prefix : 		<http://vocabularios.conacyt.mx/angelus/> .
+@prefix rdf: 		<http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: 		<http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: 		<http://www.w3.org/2002/07/owl#> .
+@prefix xsd: 		<http://www.w3.org/2001/XMLSchema#> .
+@prefix dc: 		<http://purl.org/dc/elements/1.1/> .
+@prefix xml: 		<http://www.w3.org/XML/1998/namespace> .
+@prefix wot: 		<http://xmlns.com/wot/0.1/> .
+@prefix vs: 		<http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+@prefix foaf: 		<http://xmlns.com/foaf/0.1/> .
+@base 			<http://vocabularios.conacyt.mx/angelus/> .
+
+<http://vocabularios.conacyt.mx/angelus/> rdf:type owl:Ontology ;
+                                          dc:title "Angelus"@en;
+                                          dc:description "New ontology description"@en . 
+#################################################################
+
+###  Property Definitions (Number of Property) 16 ###
+#  --------------------------- Property 0------------------------- 
+<http://visualdataweb.org/newOntology/autorDe> rdf:type owl:ObjectProperty ;
+                                               rdfs:label "esAutorDe"@en; 
+                                               rdfs:domain <http://visualdataweb.org/newOntology/Persona>;
+                                               rdfs:range <http://visualdataweb.org/newOntology/Documento> . 
+#  --------------------------- Property 1------------------------- 
+<http://visualdataweb.org/newOntology/mencionaPersona> rdf:type owl:ObjectProperty ;
+                                                       rdfs:label "menciona Persona"@en; 
+                                                       rdfs:domain <http://visualdataweb.org/newOntology/Documento>;
+                                                       rdfs:range <http://visualdataweb.org/newOntology/Persona> . 
+#  --------------------------- Property 2------------------------- 
+<http://visualdataweb.org/newOntology/firmadoPor> rdf:type owl:ObjectProperty ;
+                                                  rdfs:label "está Firmado Por"@en; 
+                                                  rdfs:domain <http://visualdataweb.org/newOntology/Documento>;
+                                                  rdfs:range <http://visualdataweb.org/newOntology/Persona> . 
+#  --------------------------- Property 3------------------------- 
+<http://visualdataweb.org/newOntology/tieneTipo> rdf:type owl:ObjectProperty ;
+                                                 rdfs:label "tiene tipo de documento"@en; 
+                                                 rdfs:domain <http://visualdataweb.org/newOntology/Documento>;
+                                                 rdfs:range <http://visualdataweb.org/newOntology/TipoDoc> . 
+#  --------------------------- Property 4------------------------- 
+<http://visualdataweb.org/newOntology/trataDe> rdf:type owl:ObjectProperty ;
+                                               rdfs:label "Trata De"@en; 
+                                               rdfs:domain <http://visualdataweb.org/newOntology/Documento>;
+                                               rdfs:range <http://visualdataweb.org/newOntology/Etiqueta> . 
+#  --------------------------- Property 5------------------------- 
+<http://visualdataweb.org/newOntology/mencionaLugar> rdf:type owl:ObjectProperty ;
+                                                     rdfs:label "menciona  Lugar"@en; 
+                                                     rdfs:domain <http://visualdataweb.org/newOntology/Documento>;
+                                                     rdfs:range <http://visualdataweb.org/newOntology/Lugar> . 
+#  --------------------------- Property 6------------------------- 
+http://visualdataweb.org/newOntology/mencionaOrganización rdf:type owl:ObjectProperty ;
+                                                          rdfs:label "menciona Organización"@en; 
+                                                          rdfs:domain <http://visualdataweb.org/newOntology/Documento>;
+                                                          rdfs:range http://visualdataweb.org/newOntology/Organización . 
+#  --------------------------- Property 7------------------------- 
+:capturadoEn rdf:type owl:ObjectProperty ;
+             rdfs:label "Capturado En"@en; 
+             rdfs:domain <http://visualdataweb.org/newOntology/Persona>;
+             rdfs:range <http://visualdataweb.org/newOntology/Lugar> . 
+#  --------------------------- Property 8------------------------- 
+:emitidoPor rdf:type owl:ObjectProperty ;
+            rdfs:label "Emitido Por"@en; 
+            rdfs:domain <http://visualdataweb.org/newOntology/Documento>;
+            rdfs:range http://visualdataweb.org/newOntology/Organización . 
+#  --------------------------- Property 9------------------------- 
+:ocurreEn rdf:type owl:ObjectProperty ;
+          rdfs:label "ocurre En"@en; 
+          rdfs:domain :Evento;
+          rdfs:range <http://visualdataweb.org/newOntology/Lugar> . 
+#  --------------------------- Property 10------------------------- 
+:adscritoA rdf:type owl:ObjectProperty ;
+           rdfs:label "adscrito A"@en; 
+           rdfs:domain <http://visualdataweb.org/newOntology/Persona>;
+           rdfs:range http://visualdataweb.org/newOntology/Organización . 
+#  --------------------------- Property 11------------------------- 
+:perpetradorDe rdf:type owl:ObjectProperty ;
+               rdfs:label "perpetrador De"@en; 
+               rdfs:domain <http://visualdataweb.org/newOntology/Persona>;
+               rdfs:range <http://visualdataweb.org/newOntology/Persona> . 
+#  --------------------------- Property 12------------------------- 
+:conoce A rdf:type owl:ObjectProperty ;
+          rdfs:label "conoce A"@en; 
+          rdfs:domain <http://visualdataweb.org/newOntology/Persona>;
+          rdfs:range <http://visualdataweb.org/newOntology/Persona> . 
+#  --------------------------- Property 13------------------------- 
+:perteneceA rdf:type owl:ObjectProperty ;
+            rdfs:label "pertenece A"@en; 
+            rdfs:domain http://visualdataweb.org/newOntology/Organización;
+            rdfs:range http://visualdataweb.org/newOntology/Organización . 
+#  --------------------------- Property 14------------------------- 
+:mencionaEvento rdf:type owl:ObjectProperty ;
+                rdfs:label "menciona Evento"@en; 
+                rdfs:domain <http://visualdataweb.org/newOntology/Documento>;
+                rdfs:range :Evento . 
+#  --------------------------- Property 15------------------------- 
+:participaEn rdf:type owl:ObjectProperty ;
+             rdfs:label "participa En"@en; 
+             rdfs:domain <http://visualdataweb.org/newOntology/Persona>;
+             rdfs:range :Evento . 
+###  Class Definitions (Number of Classes) 10 ###
+#  --------------------------- Class  0------------------------- 
+<http://visualdataweb.org/newOntology/Persona> rdf:type owl:Class; 
+                                               rdfs:label "Persona"@en . 
+#  --------------------------- Class  1------------------------- 
+<http://visualdataweb.org/newOntology/Documento> rdf:type owl:Class; 
+                                                 rdfs:label "Documento"@en . 
+#  --------------------------- Class  2------------------------- 
+<http://visualdataweb.org/newOntology/TipoDoc> rdf:type owl:Class; 
+                                               rdfs:label "Tipo de Documento"@en . 
+#  --------------------------- Class  3------------------------- 
+<http://visualdataweb.org/newOntology/Etiqueta> rdf:type owl:Class; 
+                                                rdfs:label "Etiqueta"@en . 
+#  --------------------------- Class  4------------------------- 
+<http://visualdataweb.org/newOntology/Lugar> rdf:type owl:Class; 
+                                             rdfs:label "Lugar"@en . 
+#  --------------------------- Class  5------------------------- 
+http://visualdataweb.org/newOntology/Organización rdf:type owl:Class; 
+                                                  rdfs:label "Organización"@en . 
+#  --------------------------- Class  6------------------------- 
+:AgenteEstatal rdf:type owl:Class; 
+               rdfs:subClassOf <http://visualdataweb.org/newOntology/Persona> ;
+               rdfs:label "Agente del Estado"@en . 
+#  --------------------------- Class  7------------------------- 
+:SujetoVigilado rdf:type owl:Class; 
+                rdfs:subClassOf <http://visualdataweb.org/newOntology/Persona> ;
+                rdfs:label "SujetoVigilado"@en . 
+#  --------------------------- Class  8------------------------- 
+:Desaparecido rdf:type owl:Class; 
+              rdfs:subClassOf <http://visualdataweb.org/newOntology/Persona> ;
+              rdfs:label "Desaparecido"@en . 
+#  --------------------------- Class  9------------------------- 
+:Evento rdf:type owl:Class; 
+        rdfs:label "Evento"@en . 

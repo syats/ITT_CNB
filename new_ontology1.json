@@ -18,8 +18,8 @@
     "global": {
       "zoom": "0.69",
       "translation": [
-        180.4,
-        110.97
+        172.4,
+        184.97
       ],
       "paused": false
     },
@@ -114,6 +114,10 @@
     {
       "id": "Class12",
       "type": "owl:Class"
+    },
+    {
+      "id": "NodeId13",
+      "type": "rdfs:Literal"
     }
   ],
   "classAttribute": [
@@ -123,8 +127,8 @@
       "baseIri": "http://visualdataweb.org/newOntology/",
       "label": "Persona",
       "pos": [
-        394.83,
-        142.92
+        438.9,
+        155.32
       ]
     },
     {
@@ -133,8 +137,8 @@
       "baseIri": "http://visualdataweb.org/newOntology/",
       "label": "Documento",
       "pos": [
-        756.89,
-        76.22
+        801.23,
+        66.9
       ]
     },
     {
@@ -143,8 +147,8 @@
       "baseIri": "http://visualdataweb.org/newOntology/",
       "label": "Tipo de Documento",
       "pos": [
-        1119.05,
-        -3.32
+        1162.72,
+        -16.2
       ]
     },
     {
@@ -153,8 +157,8 @@
       "baseIri": "http://visualdataweb.org/newOntology/",
       "label": "Etiqueta",
       "pos": [
-        1067.67,
-        302.25
+        1115.89,
+        289.46
       ]
     },
     {
@@ -163,8 +167,8 @@
       "baseIri": "http://visualdataweb.org/newOntology/",
       "label": "Lugar",
       "pos": [
-        513.53,
-        480.49
+        577.06,
+        487.85
       ]
     },
     {
@@ -173,8 +177,8 @@
       "baseIri": "http://visualdataweb.org/newOntology/",
       "label": "Organización",
       "pos": [
-        587.64,
-        -240.09
+        624.47,
+        -247.02
       ]
     },
     {
@@ -183,8 +187,8 @@
       "baseIri": "http://vocabularios.conacyt.mx/angelus",
       "label": "Agente del Estado",
       "pos": [
-        64.71,
-        -43.17
+        118.78,
+        -66.58
       ]
     },
     {
@@ -193,8 +197,8 @@
       "baseIri": "http://vocabularios.conacyt.mx/angelus/",
       "label": "SujetoVigilado",
       "pos": [
-        197.33,
-        488.99
+        257.05,
+        519.82
       ]
     },
     {
@@ -203,8 +207,8 @@
       "baseIri": "http://vocabularios.conacyt.mx/angelus/",
       "label": "Desaparecido",
       "pos": [
-        34.79,
-        290.04
+        42.09,
+        208.65
       ]
     },
     {
@@ -213,8 +217,18 @@
       "baseIri": "http://vocabularios.conacyt.mx/angelus/",
       "label": "Evento",
       "pos": [
-        785.77,
-        416.37
+        844.16,
+        408.38
+      ]
+    },
+    {
+      "id": "NodeId13",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#Literal",
+      "baseIri": "http://www.w3.org/2000/01/rdf-schema#",
+      "label": "Literal",
+      "pos": [
+        199.28,
+        317.9
       ]
     }
   ],
@@ -294,6 +308,10 @@
     {
       "id": "objectProperty22",
       "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "datatypeProperty23",
+      "type": "owl:DatatypeProperty"
     }
   ],
   "propertyAttribute": [
@@ -308,8 +326,8 @@
       "domain": "Class1",
       "range": "Class2",
       "pos": [
-        563.07,
-        42.93
+        603.61,
+        42.42
       ]
     },
     {
@@ -320,8 +338,8 @@
       "domain": "Class2",
       "range": "Class1",
       "pos": [
-        583.95,
-        152.13
+        630.55,
+        149.62
       ]
     },
     {
@@ -332,8 +350,8 @@
       "domain": "Class2",
       "range": "Class1",
       "pos": [
-        573.2,
-        94.09
+        616.49,
+        92.73
       ]
     },
     {
@@ -347,8 +365,8 @@
       "domain": "Class2",
       "range": "Class3",
       "pos": [
-        937.97,
-        36.45
+        981.97,
+        25.35
       ]
     },
     {
@@ -362,8 +380,8 @@
       "domain": "Class2",
       "range": "Class4",
       "pos": [
-        912.28,
-        189.24
+        958.56,
+        178.18
       ]
     },
     {
@@ -377,8 +395,8 @@
       "domain": "Class2",
       "range": "Class5",
       "pos": [
-        635.21,
-        278.36
+        689.14,
+        277.38
       ]
     },
     {
@@ -392,8 +410,8 @@
       "domain": "Class2",
       "range": "Class6",
       "pos": [
-        749.6,
-        -127.23
+        789.96,
+        -137.95
       ]
     },
     {
@@ -404,8 +422,8 @@
       "domain": "Class7",
       "range": "Class1",
       "pos": [
-        229.77,
-        49.88
+        278.84,
+        44.37
       ]
     },
     {
@@ -416,8 +434,8 @@
       "domain": "Class10",
       "range": "Class1",
       "pos": [
-        296.08,
-        315.96
+        347.97,
+        337.57
       ]
     },
     {
@@ -428,8 +446,8 @@
       "domain": "Class11",
       "range": "Class1",
       "pos": [
-        214.81,
-        216.48
+        240.49,
+        181.99
       ]
     },
     {
@@ -443,8 +461,8 @@
       "domain": "Class1",
       "range": "Class5",
       "pos": [
-        454.18,
-        311.71
+        507.98,
+        321.59
       ]
     },
     {
@@ -458,8 +476,8 @@
       "domain": "Class2",
       "range": "Class6",
       "pos": [
-        697.36,
-        -101.02
+        739.41,
+        -111.32
       ]
     },
     {
@@ -473,8 +491,8 @@
       "domain": "Class12",
       "range": "Class5",
       "pos": [
-        649.65,
-        448.43
+        710.61,
+        448.12
       ]
     },
     {
@@ -488,8 +506,8 @@
       "domain": "Class1",
       "range": "Class6",
       "pos": [
-        491.24,
-        -48.58
+        531.69,
+        -45.85
       ]
     },
     {
@@ -503,8 +521,8 @@
       "domain": "Class1",
       "range": "Class1",
       "pos": [
-        333.26,
-        285.36
+        411.35,
+        311.85
       ]
     },
     {
@@ -518,8 +536,8 @@
       "domain": "Class1",
       "range": "Class1",
       "pos": [
-        236.83,
-        120.23
+        293.67,
+        94.67
       ]
     },
     {
@@ -533,8 +551,8 @@
       "domain": "Class6",
       "range": "Class6",
       "pos": [
-        556.55,
-        -396.93
+        600.38,
+        -406.29
       ]
     },
     {
@@ -548,8 +566,8 @@
       "domain": "Class2",
       "range": "Class12",
       "pos": [
-        771.33,
-        246.29
+        822.69,
+        237.64
       ]
     },
     {
@@ -563,8 +581,20 @@
       "domain": "Class1",
       "range": "Class12",
       "pos": [
-        590.3,
-        279.65
+        641.53,
+        281.85
+      ]
+    },
+    {
+      "id": "datatypeProperty23",
+      "iri": "http://vocabularios.conacyt.mx/angelus/fechaNacimiento",
+      "baseIri": "http://vocabularios.conacyt.mx/angelus/",
+      "label": "Fecha de Nacimiento",
+      "domain": "Class1",
+      "range": "NodeId13",
+      "pos": [
+        305.77,
+        245.65
       ]
     }
   ]

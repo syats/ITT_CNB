@@ -1,0 +1,982 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://webprotege.stanford.edu/project/9LRHtEYIhLRgDpZIv99hY9#"
+     xml:base="http://webprotege.stanford.edu/project/9LRHtEYIhLRgDpZIv99hY9"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:obda="https://w3id.org/obda/vocabulary#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://webprotege.stanford.edu/project/9LRHtEYIhLRgDpZIv99hY9">
+        <owl:imports rdf:resource="http://www.co-ode.org/roberts/family-tree.owl"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://webprotege.stanford.edu/project/9LRHtEYIhLRgDpZIv99hY9#relacionesDeParentesco -->
+
+    <owl:ObjectProperty rdf:about="http://webprotege.stanford.edu/project/9LRHtEYIhLRgDpZIv99hY9#relacionesDeParentesco"/>
+    
+
+
+    <!-- http://webprotege.stanford.edu/project/9LRHtEYIhLRgDpZIv99hY9#tieneObjeto -->
+
+    <owl:ObjectProperty rdf:about="http://webprotege.stanford.edu/project/9LRHtEYIhLRgDpZIv99hY9#tieneObjeto">
+        <rdfs:domain rdf:resource="http://webprotege.stanford.edu/project/9LRHtEYIhLRgDpZIv99hY9#objetoRelacion"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://webprotege.stanford.edu/project/9LRHtEYIhLRgDpZIv99hY9#tieneObjetoEvento -->
+
+    <owl:ObjectProperty rdf:about="http://webprotege.stanford.edu/project/9LRHtEYIhLRgDpZIv99hY9#tieneObjetoEvento">
+        <rdfs:subPropertyOf rdf:resource="http://webprotege.stanford.edu/project/9LRHtEYIhLRgDpZIv99hY9#tieneObjeto"/>
+        <rdfs:range rdf:resource="http://vocabularios.ccd.conacyt.mx/angelus/Evento"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://webprotege.stanford.edu/project/9LRHtEYIhLRgDpZIv99hY9#tieneObjetoExpediente -->
+
+    <owl:ObjectProperty rdf:about="http://webprotege.stanford.edu/project/9LRHtEYIhLRgDpZIv99hY9#tieneObjetoExpediente">
+        <rdfs:subPropertyOf rdf:resource="http://webprotege.stanford.edu/project/9LRHtEYIhLRgDpZIv99hY9#tieneObjeto"/>
+        <rdfs:range rdf:resource="http://vocabularios.ccd.conacyt.mx/angelus/Expediente"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://webprotege.stanford.edu/project/9LRHtEYIhLRgDpZIv99hY9#tieneObjetoLugar -->
+
+    <owl:ObjectProperty rdf:about="http://webprotege.stanford.edu/project/9LRHtEYIhLRgDpZIv99hY9#tieneObjetoLugar">
+        <rdfs:subPropertyOf rdf:resource="http://webprotege.stanford.edu/project/9LRHtEYIhLRgDpZIv99hY9#tieneObjeto"/>
+        <rdfs:range rdf:resource="http://vocabularios.ccd.conacyt.mx/angelus/Lugar"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://webprotege.stanford.edu/project/9LRHtEYIhLRgDpZIv99hY9#tieneObjetoOrganización -->
+
+    <owl:ObjectProperty rdf:about="http://webprotege.stanford.edu/project/9LRHtEYIhLRgDpZIv99hY9#tieneObjetoOrganización">
+        <rdfs:subPropertyOf rdf:resource="http://webprotege.stanford.edu/project/9LRHtEYIhLRgDpZIv99hY9#tieneObjeto"/>
+        <rdfs:range rdf:resource="http://vocabularios.ccd.conacyt.mx/angelus/Organización"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://webprotege.stanford.edu/project/9LRHtEYIhLRgDpZIv99hY9#tieneObjetoPersona -->
+
+    <owl:ObjectProperty rdf:about="http://webprotege.stanford.edu/project/9LRHtEYIhLRgDpZIv99hY9#tieneObjetoPersona">
+        <rdfs:subPropertyOf rdf:resource="http://webprotege.stanford.edu/project/9LRHtEYIhLRgDpZIv99hY9#tieneObjeto"/>
+        <rdfs:range rdf:resource="http://vocabularios.ccd.conacyt.mx/angelus/Persona"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://webprotege.stanford.edu/project/9LRHtEYIhLRgDpZIv99hY9#tieneSujeto -->
+
+    <owl:ObjectProperty rdf:about="http://webprotege.stanford.edu/project/9LRHtEYIhLRgDpZIv99hY9#tieneSujeto">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://webprotege.stanford.edu/project/9LRHtEYIhLRgDpZIv99hY9#tieneSujetoEvento -->
+
+    <owl:ObjectProperty rdf:about="http://webprotege.stanford.edu/project/9LRHtEYIhLRgDpZIv99hY9#tieneSujetoEvento">
+        <rdfs:subPropertyOf rdf:resource="http://webprotege.stanford.edu/project/9LRHtEYIhLRgDpZIv99hY9#tieneSujeto"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://webprotege.stanford.edu/project/9LRHtEYIhLRgDpZIv99hY9#tieneSujetoExpediente -->
+
+    <owl:ObjectProperty rdf:about="http://webprotege.stanford.edu/project/9LRHtEYIhLRgDpZIv99hY9#tieneSujetoExpediente">
+        <rdfs:subPropertyOf rdf:resource="http://webprotege.stanford.edu/project/9LRHtEYIhLRgDpZIv99hY9#tieneSujeto"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://webprotege.stanford.edu/project/9LRHtEYIhLRgDpZIv99hY9#tieneSujetoLugar -->
+
+    <owl:ObjectProperty rdf:about="http://webprotege.stanford.edu/project/9LRHtEYIhLRgDpZIv99hY9#tieneSujetoLugar">
+        <rdfs:subPropertyOf rdf:resource="http://webprotege.stanford.edu/project/9LRHtEYIhLRgDpZIv99hY9#tieneSujeto"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://webprotege.stanford.edu/project/9LRHtEYIhLRgDpZIv99hY9#tieneSujetoOrganización -->
+
+    <owl:ObjectProperty rdf:about="http://webprotege.stanford.edu/project/9LRHtEYIhLRgDpZIv99hY9#tieneSujetoOrganización">
+        <rdfs:subPropertyOf rdf:resource="http://webprotege.stanford.edu/project/9LRHtEYIhLRgDpZIv99hY9#tieneSujeto"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://webprotege.stanford.edu/project/9LRHtEYIhLRgDpZIv99hY9#tieneSujetoPersona -->
+
+    <owl:ObjectProperty rdf:about="http://webprotege.stanford.edu/project/9LRHtEYIhLRgDpZIv99hY9#tieneSujetoPersona">
+        <rdfs:subPropertyOf rdf:resource="http://webprotege.stanford.edu/project/9LRHtEYIhLRgDpZIv99hY9#tieneSujeto"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.co-ode.org/roberts/family-tree.owl#hasAuntInLaw -->
+
+    <rdf:Description rdf:about="http://www.co-ode.org/roberts/family-tree.owl#hasAuntInLaw">
+        <rdfs:subPropertyOf rdf:resource="http://webprotege.stanford.edu/project/9LRHtEYIhLRgDpZIv99hY9#relacionesDeParentesco"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.co-ode.org/roberts/family-tree.owl#hasBrother -->
+
+    <rdf:Description rdf:about="http://www.co-ode.org/roberts/family-tree.owl#hasBrother">
+        <rdfs:subPropertyOf rdf:resource="http://webprotege.stanford.edu/project/9LRHtEYIhLRgDpZIv99hY9#relacionesDeParentesco"/>
+        <rdfs:label xml:lang="es">tieneHermano</rdfs:label>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.co-ode.org/roberts/family-tree.owl#hasBrotherInLaw -->
+
+    <rdf:Description rdf:about="http://www.co-ode.org/roberts/family-tree.owl#hasBrotherInLaw">
+        <rdfs:subPropertyOf rdf:resource="http://webprotege.stanford.edu/project/9LRHtEYIhLRgDpZIv99hY9#relacionesDeParentesco"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.co-ode.org/roberts/family-tree.owl#hasChild -->
+
+    <rdf:Description rdf:about="http://www.co-ode.org/roberts/family-tree.owl#hasChild">
+        <rdfs:subPropertyOf rdf:resource="http://webprotege.stanford.edu/project/9LRHtEYIhLRgDpZIv99hY9#relacionesDeParentesco"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.co-ode.org/roberts/family-tree.owl#hasFemalePartner -->
+
+    <rdf:Description rdf:about="http://www.co-ode.org/roberts/family-tree.owl#hasFemalePartner">
+        <rdfs:subPropertyOf rdf:resource="http://webprotege.stanford.edu/project/9LRHtEYIhLRgDpZIv99hY9#relacionesDeParentesco"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.co-ode.org/roberts/family-tree.owl#hasMalePartner -->
+
+    <rdf:Description rdf:about="http://www.co-ode.org/roberts/family-tree.owl#hasMalePartner">
+        <rdfs:subPropertyOf rdf:resource="http://webprotege.stanford.edu/project/9LRHtEYIhLRgDpZIv99hY9#relacionesDeParentesco"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.co-ode.org/roberts/family-tree.owl#hasParentInLaw -->
+
+    <rdf:Description rdf:about="http://www.co-ode.org/roberts/family-tree.owl#hasParentInLaw">
+        <rdfs:subPropertyOf rdf:resource="http://webprotege.stanford.edu/project/9LRHtEYIhLRgDpZIv99hY9#relacionesDeParentesco"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.co-ode.org/roberts/family-tree.owl#hasPartner -->
+
+    <rdf:Description rdf:about="http://www.co-ode.org/roberts/family-tree.owl#hasPartner">
+        <rdfs:subPropertyOf rdf:resource="http://webprotege.stanford.edu/project/9LRHtEYIhLRgDpZIv99hY9#relacionesDeParentesco"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.co-ode.org/roberts/family-tree.owl#hasSex -->
+
+    <rdf:Description rdf:about="http://www.co-ode.org/roberts/family-tree.owl#hasSex">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.co-ode.org/roberts/family-tree.owl#hasSister -->
+
+    <rdf:Description rdf:about="http://www.co-ode.org/roberts/family-tree.owl#hasSister">
+        <rdfs:subPropertyOf rdf:resource="http://webprotege.stanford.edu/project/9LRHtEYIhLRgDpZIv99hY9#relacionesDeParentesco"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.co-ode.org/roberts/family-tree.owl#hasSisterInLaw -->
+
+    <rdf:Description rdf:about="http://www.co-ode.org/roberts/family-tree.owl#hasSisterInLaw">
+        <rdfs:subPropertyOf rdf:resource="http://webprotege.stanford.edu/project/9LRHtEYIhLRgDpZIv99hY9#relacionesDeParentesco"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.co-ode.org/roberts/family-tree.owl#hasUncleInLaw -->
+
+    <rdf:Description rdf:about="http://www.co-ode.org/roberts/family-tree.owl#hasUncleInLaw">
+        <rdfs:subPropertyOf rdf:resource="http://webprotege.stanford.edu/project/9LRHtEYIhLRgDpZIv99hY9#relacionesDeParentesco"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.co-ode.org/roberts/family-tree.owl#isAncestorOf -->
+
+    <rdf:Description rdf:about="http://www.co-ode.org/roberts/family-tree.owl#isAncestorOf">
+        <rdfs:subPropertyOf rdf:resource="http://webprotege.stanford.edu/project/9LRHtEYIhLRgDpZIv99hY9#relacionesDeParentesco"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.co-ode.org/roberts/family-tree.owl#isAuntOf -->
+
+    <rdf:Description rdf:about="http://www.co-ode.org/roberts/family-tree.owl#isAuntOf">
+        <rdfs:subPropertyOf rdf:resource="http://webprotege.stanford.edu/project/9LRHtEYIhLRgDpZIv99hY9#relacionesDeParentesco"/>
+        <rdfs:label xml:lang="es">esTiaDe</rdfs:label>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.co-ode.org/roberts/family-tree.owl#isChildOf -->
+
+    <rdf:Description rdf:about="http://www.co-ode.org/roberts/family-tree.owl#isChildOf">
+        <rdfs:subPropertyOf rdf:resource="http://webprotege.stanford.edu/project/9LRHtEYIhLRgDpZIv99hY9#relacionesDeParentesco"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.co-ode.org/roberts/family-tree.owl#isFatherInLawOf -->
+
+    <rdf:Description rdf:about="http://www.co-ode.org/roberts/family-tree.owl#isFatherInLawOf">
+        <rdfs:subPropertyOf rdf:resource="http://webprotege.stanford.edu/project/9LRHtEYIhLRgDpZIv99hY9#relacionesDeParentesco"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.co-ode.org/roberts/family-tree.owl#isFatherOf -->
+
+    <rdf:Description rdf:about="http://www.co-ode.org/roberts/family-tree.owl#isFatherOf">
+        <rdfs:subPropertyOf rdf:resource="http://webprotege.stanford.edu/project/9LRHtEYIhLRgDpZIv99hY9#relacionesDeParentesco"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.co-ode.org/roberts/family-tree.owl#isGrandParentOf -->
+
+    <rdf:Description rdf:about="http://www.co-ode.org/roberts/family-tree.owl#isGrandParentOf">
+        <rdfs:subPropertyOf rdf:resource="http://webprotege.stanford.edu/project/9LRHtEYIhLRgDpZIv99hY9#relacionesDeParentesco"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.co-ode.org/roberts/family-tree.owl#isGrandfatherOf -->
+
+    <rdf:Description rdf:about="http://www.co-ode.org/roberts/family-tree.owl#isGrandfatherOf">
+        <rdfs:subPropertyOf rdf:resource="http://webprotege.stanford.edu/project/9LRHtEYIhLRgDpZIv99hY9#relacionesDeParentesco"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.co-ode.org/roberts/family-tree.owl#isGrandmotherOf -->
+
+    <rdf:Description rdf:about="http://www.co-ode.org/roberts/family-tree.owl#isGrandmotherOf">
+        <rdfs:subPropertyOf rdf:resource="http://webprotege.stanford.edu/project/9LRHtEYIhLRgDpZIv99hY9#relacionesDeParentesco"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.co-ode.org/roberts/family-tree.owl#isGreatAuntOf -->
+
+    <rdf:Description rdf:about="http://www.co-ode.org/roberts/family-tree.owl#isGreatAuntOf">
+        <rdfs:subPropertyOf rdf:resource="http://webprotege.stanford.edu/project/9LRHtEYIhLRgDpZIv99hY9#relacionesDeParentesco"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.co-ode.org/roberts/family-tree.owl#isGreatGrandParentOf -->
+
+    <rdf:Description rdf:about="http://www.co-ode.org/roberts/family-tree.owl#isGreatGrandParentOf">
+        <rdfs:subPropertyOf rdf:resource="http://webprotege.stanford.edu/project/9LRHtEYIhLRgDpZIv99hY9#relacionesDeParentesco"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.co-ode.org/roberts/family-tree.owl#isGreatGrandfatherOf -->
+
+    <rdf:Description rdf:about="http://www.co-ode.org/roberts/family-tree.owl#isGreatGrandfatherOf">
+        <rdfs:subPropertyOf rdf:resource="http://webprotege.stanford.edu/project/9LRHtEYIhLRgDpZIv99hY9#relacionesDeParentesco"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.co-ode.org/roberts/family-tree.owl#isGreatGrandmotherOf -->
+
+    <rdf:Description rdf:about="http://www.co-ode.org/roberts/family-tree.owl#isGreatGrandmotherOf">
+        <rdfs:subPropertyOf rdf:resource="http://webprotege.stanford.edu/project/9LRHtEYIhLRgDpZIv99hY9#relacionesDeParentesco"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.co-ode.org/roberts/family-tree.owl#isGreatUncleOf -->
+
+    <rdf:Description rdf:about="http://www.co-ode.org/roberts/family-tree.owl#isGreatUncleOf">
+        <rdfs:subPropertyOf rdf:resource="http://webprotege.stanford.edu/project/9LRHtEYIhLRgDpZIv99hY9#relacionesDeParentesco"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.co-ode.org/roberts/family-tree.owl#isHusbandOf -->
+
+    <rdf:Description rdf:about="http://www.co-ode.org/roberts/family-tree.owl#isHusbandOf">
+        <rdfs:subPropertyOf rdf:resource="http://webprotege.stanford.edu/project/9LRHtEYIhLRgDpZIv99hY9#relacionesDeParentesco"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.co-ode.org/roberts/family-tree.owl#isMotherInLawOf -->
+
+    <rdf:Description rdf:about="http://www.co-ode.org/roberts/family-tree.owl#isMotherInLawOf">
+        <rdfs:subPropertyOf rdf:resource="http://webprotege.stanford.edu/project/9LRHtEYIhLRgDpZIv99hY9#relacionesDeParentesco"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.co-ode.org/roberts/family-tree.owl#isMotherOf -->
+
+    <rdf:Description rdf:about="http://www.co-ode.org/roberts/family-tree.owl#isMotherOf">
+        <rdfs:subPropertyOf rdf:resource="http://webprotege.stanford.edu/project/9LRHtEYIhLRgDpZIv99hY9#relacionesDeParentesco"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.co-ode.org/roberts/family-tree.owl#isParentOf -->
+
+    <rdf:Description rdf:about="http://www.co-ode.org/roberts/family-tree.owl#isParentOf">
+        <rdfs:subPropertyOf rdf:resource="http://webprotege.stanford.edu/project/9LRHtEYIhLRgDpZIv99hY9#relacionesDeParentesco"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.co-ode.org/roberts/family-tree.owl#isPartnerIn -->
+
+    <rdf:Description rdf:about="http://www.co-ode.org/roberts/family-tree.owl#isPartnerIn">
+        <rdfs:subPropertyOf rdf:resource="http://webprotege.stanford.edu/project/9LRHtEYIhLRgDpZIv99hY9#relacionesDeParentesco"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.co-ode.org/roberts/family-tree.owl#isRelationOf -->
+
+    <rdf:Description rdf:about="http://www.co-ode.org/roberts/family-tree.owl#isRelationOf">
+        <rdfs:subPropertyOf rdf:resource="http://webprotege.stanford.edu/project/9LRHtEYIhLRgDpZIv99hY9#relacionesDeParentesco"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.co-ode.org/roberts/family-tree.owl#isWifeOf -->
+
+    <rdf:Description rdf:about="http://www.co-ode.org/roberts/family-tree.owl#isWifeOf">
+        <rdfs:subPropertyOf rdf:resource="http://webprotege.stanford.edu/project/9LRHtEYIhLRgDpZIv99hY9#relacionesDeParentesco"/>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://vocabularios.ccd.conacyt.mx/angelus/AcciónDeBúsqueda -->
+
+    <owl:Class rdf:about="http://vocabularios.ccd.conacyt.mx/angelus/AcciónDeBúsqueda">
+        <rdfs:subClassOf rdf:resource="http://vocabularios.ccd.conacyt.mx/angelus/Evento"/>
+        <rdfs:label xml:lang="es">Acción de Búsqueda</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://vocabularios.ccd.conacyt.mx/angelus/Autor -->
+
+    <owl:Class rdf:about="http://vocabularios.ccd.conacyt.mx/angelus/Autor">
+        <rdfs:subClassOf rdf:resource="http://vocabularios.ccd.conacyt.mx/angelus/Persona"/>
+        <rdfs:label xml:lang="es">Autor</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://vocabularios.ccd.conacyt.mx/angelus/BuscadorIndependiente -->
+
+    <owl:Class rdf:about="http://vocabularios.ccd.conacyt.mx/angelus/BuscadorIndependiente">
+        <rdfs:subClassOf rdf:resource="http://vocabularios.ccd.conacyt.mx/angelus/Persona"/>
+        <rdfs:label xml:lang="es">Buscador Independiente</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://vocabularios.ccd.conacyt.mx/angelus/BuscadorInstitucional -->
+
+    <owl:Class rdf:about="http://vocabularios.ccd.conacyt.mx/angelus/BuscadorInstitucional">
+        <rdfs:subClassOf rdf:resource="http://vocabularios.ccd.conacyt.mx/angelus/Persona"/>
+        <rdfs:label xml:lang="es">Buscador Institucional</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://vocabularios.ccd.conacyt.mx/angelus/Colectivo -->
+
+    <owl:Class rdf:about="http://vocabularios.ccd.conacyt.mx/angelus/Colectivo">
+        <rdfs:subClassOf rdf:resource="http://vocabularios.ccd.conacyt.mx/angelus/Organización"/>
+        <rdfs:label xml:lang="es">Colectivo</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://vocabularios.ccd.conacyt.mx/angelus/DesaparecidoPermanente -->
+
+    <owl:Class rdf:about="http://vocabularios.ccd.conacyt.mx/angelus/DesaparecidoPermanente">
+        <rdfs:subClassOf rdf:resource="http://vocabularios.ccd.conacyt.mx/angelus/Persona"/>
+        <rdfs:label xml:lang="es">Desaparecido Permanente</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://vocabularios.ccd.conacyt.mx/angelus/Evento -->
+
+    <owl:Class rdf:about="http://vocabularios.ccd.conacyt.mx/angelus/Evento">
+        <rdfs:label xml:lang="es">Evento</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://vocabularios.ccd.conacyt.mx/angelus/EventoDeCaptura -->
+
+    <owl:Class rdf:about="http://vocabularios.ccd.conacyt.mx/angelus/EventoDeCaptura">
+        <rdfs:subClassOf rdf:resource="http://vocabularios.ccd.conacyt.mx/angelus/Evento"/>
+        <rdfs:label xml:lang="es">Evento de Captura</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://vocabularios.ccd.conacyt.mx/angelus/EventoDeInternación -->
+
+    <owl:Class rdf:about="http://vocabularios.ccd.conacyt.mx/angelus/EventoDeInternación">
+        <rdfs:subClassOf rdf:resource="http://vocabularios.ccd.conacyt.mx/angelus/Evento"/>
+        <rdfs:label xml:lang="es">Evento de Internación</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://vocabularios.ccd.conacyt.mx/angelus/Expediente -->
+
+    <owl:Class rdf:about="http://vocabularios.ccd.conacyt.mx/angelus/Expediente">
+        <rdfs:label xml:lang="es">Expediente</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://vocabularios.ccd.conacyt.mx/angelus/ExpedienteDeAmparo -->
+
+    <owl:Class rdf:about="http://vocabularios.ccd.conacyt.mx/angelus/ExpedienteDeAmparo">
+        <rdfs:subClassOf rdf:resource="http://vocabularios.ccd.conacyt.mx/angelus/Expediente"/>
+        <rdfs:label xml:lang="es">Expediente de Amparo  (Habeas Corpus)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://vocabularios.ccd.conacyt.mx/angelus/ExpedienteDeAmparoOtros -->
+
+    <owl:Class rdf:about="http://vocabularios.ccd.conacyt.mx/angelus/ExpedienteDeAmparoOtros">
+        <rdfs:subClassOf rdf:resource="http://vocabularios.ccd.conacyt.mx/angelus/Expediente"/>
+        <rdfs:label xml:lang="es">Expediente de Amparo Otros</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://vocabularios.ccd.conacyt.mx/angelus/ExpedienteDeCEAV -->
+
+    <owl:Class rdf:about="http://vocabularios.ccd.conacyt.mx/angelus/ExpedienteDeCEAV">
+        <rdfs:subClassOf rdf:resource="http://vocabularios.ccd.conacyt.mx/angelus/Expediente"/>
+        <rdfs:label xml:lang="es">Expediente de CEAV</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://vocabularios.ccd.conacyt.mx/angelus/ExpedienteDeComisionesDeDerechosHumanos -->
+
+    <owl:Class rdf:about="http://vocabularios.ccd.conacyt.mx/angelus/ExpedienteDeComisionesDeDerechosHumanos">
+        <rdfs:subClassOf rdf:resource="http://vocabularios.ccd.conacyt.mx/angelus/Expediente"/>
+        <rdfs:label xml:lang="es">Expediente de Comisiones de Derechos Humanos</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://vocabularios.ccd.conacyt.mx/angelus/ExpedienteDeComisiónEjecutivaDeAtenciónAVíctimas -->
+
+    <owl:Class rdf:about="http://vocabularios.ccd.conacyt.mx/angelus/ExpedienteDeComisiónEjecutivaDeAtenciónAVíctimas">
+        <rdfs:subClassOf rdf:resource="http://vocabularios.ccd.conacyt.mx/angelus/Expediente"/>
+        <rdfs:label xml:lang="es">Expediente de Comisión Ejecutiva de Atención a Víctimas</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://vocabularios.ccd.conacyt.mx/angelus/ExpedienteDeInvestigación -->
+
+    <owl:Class rdf:about="http://vocabularios.ccd.conacyt.mx/angelus/ExpedienteDeInvestigación">
+        <rdfs:subClassOf rdf:resource="http://vocabularios.ccd.conacyt.mx/angelus/Expediente"/>
+        <rdfs:label xml:lang="es">Expediente de Investigación</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://vocabularios.ccd.conacyt.mx/angelus/ExpedienteDeJurisdicciónVoluntaria -->
+
+    <owl:Class rdf:about="http://vocabularios.ccd.conacyt.mx/angelus/ExpedienteDeJurisdicciónVoluntaria">
+        <rdfs:subClassOf rdf:resource="http://vocabularios.ccd.conacyt.mx/angelus/Expediente"/>
+        <rdfs:label xml:lang="es">Expediente de Jurisdicción Voluntaria</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://vocabularios.ccd.conacyt.mx/angelus/ExpedienteDeOrganizaciónInternacional -->
+
+    <owl:Class rdf:about="http://vocabularios.ccd.conacyt.mx/angelus/ExpedienteDeOrganizaciónInternacional">
+        <rdfs:subClassOf rdf:resource="http://vocabularios.ccd.conacyt.mx/angelus/Expediente"/>
+        <rdfs:label xml:lang="es">Expediente de Organización Internacional</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://vocabularios.ccd.conacyt.mx/angelus/ExpedienteDeProcesoPenal -->
+
+    <owl:Class rdf:about="http://vocabularios.ccd.conacyt.mx/angelus/ExpedienteDeProcesoPenal">
+        <rdfs:subClassOf rdf:resource="http://vocabularios.ccd.conacyt.mx/angelus/Expediente"/>
+        <rdfs:label xml:lang="es">Expediente de Proceso Penal</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://vocabularios.ccd.conacyt.mx/angelus/ExpedienteDelFideicomisoDeReparación -->
+
+    <owl:Class rdf:about="http://vocabularios.ccd.conacyt.mx/angelus/ExpedienteDelFideicomisoDeReparación">
+        <rdfs:subClassOf rdf:resource="http://vocabularios.ccd.conacyt.mx/angelus/Expediente"/>
+        <rdfs:label xml:lang="es">Expediente del Fideicomiso de Reparación</rdfs:label>
+    </owl:Class>
+    
+
+B
+    <!-- http://vocabularios.ccd.conacyt.mx/angelus/ExpedienteDeBúsqueda -->
+
+    <owl:Class rdf:about="http://vocabularios.ccd.conacyt.mx/angelus/ExpedienteDeBúsqueda">
+        <rdfs:subClassOf rdf:resource="http://vocabularios.ccd.conacyt.mx/angelus/Expediente"/>
+        <rdfs:label xml:lang="es">Expediente de Búsqueda</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://vocabularios.ccd.conacyt.mx/angelus/Familiar -->
+
+    <owl:Class rdf:about="http://vocabularios.ccd.conacyt.mx/angelus/Familiar">
+        <rdfs:subClassOf rdf:resource="http://vocabularios.ccd.conacyt.mx/angelus/Persona"/>
+        <rdfs:label xml:lang="es">Familiar</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://vocabularios.ccd.conacyt.mx/angelus/Lugar -->
+
+    <owl:Class rdf:about="http://vocabularios.ccd.conacyt.mx/angelus/Lugar">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:label xml:lang="es">Lugar</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://vocabularios.ccd.conacyt.mx/angelus/LugarDeCautiverio -->
+
+    <owl:Class rdf:about="http://vocabularios.ccd.conacyt.mx/angelus/LugarDeCautiverio">
+        <rdfs:subClassOf rdf:resource="http://vocabularios.ccd.conacyt.mx/angelus/Lugar"/>
+        <rdfs:label xml:lang="es">Lugar de Cautiverio</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://vocabularios.ccd.conacyt.mx/angelus/LugarDeDestinoFinal -->
+
+    <owl:Class rdf:about="http://vocabularios.ccd.conacyt.mx/angelus/LugarDeDestinoFinal">
+        <rdfs:subClassOf rdf:resource="http://vocabularios.ccd.conacyt.mx/angelus/Lugar"/>
+        <rdfs:label xml:lang="es">Lugar de Destino Final</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://vocabularios.ccd.conacyt.mx/angelus/LugarDeDetención -->
+
+    <owl:Class rdf:about="http://vocabularios.ccd.conacyt.mx/angelus/LugarDeDetención">
+        <rdfs:subClassOf rdf:resource="http://vocabularios.ccd.conacyt.mx/angelus/Lugar"/>
+        <rdfs:label xml:lang="es">Lugar de Detención</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://vocabularios.ccd.conacyt.mx/angelus/LugarDeEjecución -->
+
+    <owl:Class rdf:about="http://vocabularios.ccd.conacyt.mx/angelus/LugarDeEjecución">
+        <rdfs:subClassOf rdf:resource="http://vocabularios.ccd.conacyt.mx/angelus/Lugar"/>
+        <rdfs:label xml:lang="es">Lugar de Ejecución</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://vocabularios.ccd.conacyt.mx/angelus/Organización -->
+
+    <owl:Class rdf:about="http://vocabularios.ccd.conacyt.mx/angelus/Organización">
+        <rdfs:label xml:lang="es">Organización</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://vocabularios.ccd.conacyt.mx/angelus/OrganizaciónArmada -->
+
+    <owl:Class rdf:about="http://vocabularios.ccd.conacyt.mx/angelus/OrganizaciónArmada">
+        <rdfs:subClassOf rdf:resource="http://vocabularios.ccd.conacyt.mx/angelus/Organización"/>
+        <rdfs:label xml:lang="es">Organización Armada</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://vocabularios.ccd.conacyt.mx/angelus/OrganizaciónCivil -->
+
+    <owl:Class rdf:about="http://vocabularios.ccd.conacyt.mx/angelus/OrganizaciónCivil">
+        <rdfs:subClassOf rdf:resource="http://vocabularios.ccd.conacyt.mx/angelus/Organización"/>
+        <rdfs:label xml:lang="es">Organización Civil</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://vocabularios.ccd.conacyt.mx/angelus/OrganizaciónDelCrimen -->
+
+    <owl:Class rdf:about="http://vocabularios.ccd.conacyt.mx/angelus/OrganizaciónDelCrimen">
+        <rdfs:subClassOf rdf:resource="http://vocabularios.ccd.conacyt.mx/angelus/Organización"/>
+        <rdfs:label xml:lang="es">Organización Criminal</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://vocabularios.ccd.conacyt.mx/angelus/OrganizaciónGubernamental -->
+
+    <owl:Class rdf:about="http://vocabularios.ccd.conacyt.mx/angelus/OrganizaciónGubernamental">
+        <rdfs:subClassOf rdf:resource="http://vocabularios.ccd.conacyt.mx/angelus/Organización"/>
+        <rdfs:label xml:lang="es">Organización Gubernamental</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://vocabularios.ccd.conacyt.mx/angelus/OrganizaciónInternacional -->
+
+    <owl:Class rdf:about="http://vocabularios.ccd.conacyt.mx/angelus/OrganizaciónInternacional">
+        <rdfs:subClassOf rdf:resource="http://vocabularios.ccd.conacyt.mx/angelus/Organización"/>
+        <rdfs:label xml:lang="es">Organización Internacional</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://vocabularios.ccd.conacyt.mx/angelus/OrganizaciónParamilitar -->
+
+    <owl:Class rdf:about="http://vocabularios.ccd.conacyt.mx/angelus/OrganizaciónParamilitar">
+        <rdfs:subClassOf rdf:resource="http://vocabularios.ccd.conacyt.mx/angelus/Organización"/>
+        <rdfs:label xml:lang="es">Organización Paramilitar</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://vocabularios.ccd.conacyt.mx/angelus/Perpetrador -->
+
+    <owl:Class rdf:about="http://vocabularios.ccd.conacyt.mx/angelus/Perpetrador">
+        <rdfs:subClassOf rdf:resource="http://vocabularios.ccd.conacyt.mx/angelus/Persona"/>
+        <rdfs:label xml:lang="es">Perpetrador</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://vocabularios.ccd.conacyt.mx/angelus/Persona -->
+
+    <owl:Class rdf:about="http://vocabularios.ccd.conacyt.mx/angelus/Persona">
+        <owl:equivalentClass rdf:resource="http://www.co-ode.org/roberts/family-tree.owl#Person"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:label xml:lang="es">Persona</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://vocabularios.ccd.conacyt.mx/angelus/ServidorPúblico -->
+
+    <owl:Class rdf:about="http://vocabularios.ccd.conacyt.mx/angelus/ServidorPúblico">
+        <rdfs:subClassOf rdf:resource="http://vocabularios.ccd.conacyt.mx/angelus/Persona"/>
+        <rdfs:label xml:lang="es">Servidor Público</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://vocabularios.ccd.conacyt.mx/angelus/Testigo -->
+
+    <owl:Class rdf:about="http://vocabularios.ccd.conacyt.mx/angelus/Testigo">
+        <rdfs:subClassOf rdf:resource="http://vocabularios.ccd.conacyt.mx/angelus/Persona"/>
+        <rdfs:label xml:lang="es">Testigo</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/project/9LRHtEYIhLRgDpZIv99hY9#atestiguoCapturaDe -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/project/9LRHtEYIhLRgDpZIv99hY9#atestiguoCapturaDe">
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/project/9LRHtEYIhLRgDpZIv99hY9#relacionPersonaPersona"/>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/project/9LRHtEYIhLRgDpZIv99hY9#atestiguoCautiverioDe -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/project/9LRHtEYIhLRgDpZIv99hY9#atestiguoCautiverioDe">
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/project/9LRHtEYIhLRgDpZIv99hY9#relacionPersonaPersona"/>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/project/9LRHtEYIhLRgDpZIv99hY9#atestiguoDestinoDe -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/project/9LRHtEYIhLRgDpZIv99hY9#atestiguoDestinoDe">
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/project/9LRHtEYIhLRgDpZIv99hY9#relacionPersonaPersona"/>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/project/9LRHtEYIhLRgDpZIv99hY9#atestiguoEjecuciónDe -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/project/9LRHtEYIhLRgDpZIv99hY9#atestiguoEjecuciónDe">
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/project/9LRHtEYIhLRgDpZIv99hY9#relacionPersonaPersona"/>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/project/9LRHtEYIhLRgDpZIv99hY9#buscaA -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/project/9LRHtEYIhLRgDpZIv99hY9#buscaA">
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/project/9LRHtEYIhLRgDpZIv99hY9#relacionPersonaPersona"/>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/project/9LRHtEYIhLRgDpZIv99hY9#capturadoJuntoCon -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/project/9LRHtEYIhLRgDpZIv99hY9#capturadoJuntoCon">
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/project/9LRHtEYIhLRgDpZIv99hY9#relacionPersonaPersona"/>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/project/9LRHtEYIhLRgDpZIv99hY9#compañeroDe -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/project/9LRHtEYIhLRgDpZIv99hY9#compañeroDe">
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/project/9LRHtEYIhLRgDpZIv99hY9#relacionPersonaPersona"/>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/project/9LRHtEYIhLRgDpZIv99hY9#coolocalizadoCon -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/project/9LRHtEYIhLRgDpZIv99hY9#coolocalizadoCon">
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/project/9LRHtEYIhLRgDpZIv99hY9#relacionPersonaPersona"/>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/project/9LRHtEYIhLRgDpZIv99hY9#de_parentesco -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/project/9LRHtEYIhLRgDpZIv99hY9#de_parentesco">
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/project/9LRHtEYIhLRgDpZIv99hY9#relacionPersonaPersona"/>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/project/9LRHtEYIhLRgDpZIv99hY9#estuvoCautivoEn -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/project/9LRHtEYIhLRgDpZIv99hY9#estuvoCautivoEn">
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/project/9LRHtEYIhLRgDpZIv99hY9#relacionPersonaLugar"/>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/project/9LRHtEYIhLRgDpZIv99hY9#estuvoDestacamentadoEn -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/project/9LRHtEYIhLRgDpZIv99hY9#estuvoDestacamentadoEn">
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/project/9LRHtEYIhLRgDpZIv99hY9#relacionPersonaLugar"/>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/project/9LRHtEYIhLRgDpZIv99hY9#estuvoInternadoEn -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/project/9LRHtEYIhLRgDpZIv99hY9#estuvoInternadoEn">
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/project/9LRHtEYIhLRgDpZIv99hY9#relacionPersonaLugar"/>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/project/9LRHtEYIhLRgDpZIv99hY9#estuvoPresoEn -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/project/9LRHtEYIhLRgDpZIv99hY9#estuvoPresoEn">
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/project/9LRHtEYIhLRgDpZIv99hY9#relacionPersonaLugar"/>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/project/9LRHtEYIhLRgDpZIv99hY9#exiliadoEn -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/project/9LRHtEYIhLRgDpZIv99hY9#exiliadoEn">
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/project/9LRHtEYIhLRgDpZIv99hY9#relacionPersonaLugar"/>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/project/9LRHtEYIhLRgDpZIv99hY9#fueCapturadoEn -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/project/9LRHtEYIhLRgDpZIv99hY9#fueCapturadoEn">
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/project/9LRHtEYIhLRgDpZIv99hY9#relacionPersonaLugar"/>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/project/9LRHtEYIhLRgDpZIv99hY9#fueEjecutadoEn -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/project/9LRHtEYIhLRgDpZIv99hY9#fueEjecutadoEn">
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/project/9LRHtEYIhLRgDpZIv99hY9#relacionPersonaLugar"/>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/project/9LRHtEYIhLRgDpZIv99hY9#fueTortudadoEn -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/project/9LRHtEYIhLRgDpZIv99hY9#fueTortudadoEn">
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/project/9LRHtEYIhLRgDpZIv99hY9#relacionPersonaLugar"/>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/project/9LRHtEYIhLRgDpZIv99hY9#fueVistoEn -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/project/9LRHtEYIhLRgDpZIv99hY9#fueVistoEn">
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/project/9LRHtEYIhLRgDpZIv99hY9#relacionPersonaLugar"/>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/project/9LRHtEYIhLRgDpZIv99hY9#hijoDeEnCautiverioDe -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/project/9LRHtEYIhLRgDpZIv99hY9#hijoDeEnCautiverioDe">
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/project/9LRHtEYIhLRgDpZIv99hY9#relacionPersonaPersona"/>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/project/9LRHtEYIhLRgDpZIv99hY9#murioEn -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/project/9LRHtEYIhLRgDpZIv99hY9#murioEn">
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/project/9LRHtEYIhLRgDpZIv99hY9#relacionPersonaLugar"/>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/project/9LRHtEYIhLRgDpZIv99hY9#nacioEn -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/project/9LRHtEYIhLRgDpZIv99hY9#nacioEn">
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/project/9LRHtEYIhLRgDpZIv99hY9#relacionPersonaLugar"/>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/project/9LRHtEYIhLRgDpZIv99hY9#objetoRelacion -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/project/9LRHtEYIhLRgDpZIv99hY9#objetoRelacion"/>
+    
+
+
+    <!-- http://webprotege.stanford.edu/project/9LRHtEYIhLRgDpZIv99hY9#perpetroDelitosEn -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/project/9LRHtEYIhLRgDpZIv99hY9#perpetroDelitosEn">
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/project/9LRHtEYIhLRgDpZIv99hY9#relacionPersonaLugar"/>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/project/9LRHtEYIhLRgDpZIv99hY9#relacionPersonaLugar -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/project/9LRHtEYIhLRgDpZIv99hY9#relacionPersonaLugar">
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/project/9LRHtEYIhLRgDpZIv99hY9#objetoRelacion"/>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/project/9LRHtEYIhLRgDpZIv99hY9#relacionPersonaPersona -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/project/9LRHtEYIhLRgDpZIv99hY9#relacionPersonaPersona">
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/project/9LRHtEYIhLRgDpZIv99hY9#objetoRelacion"/>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/project/9LRHtEYIhLRgDpZIv99hY9#representanteJurídicoDe -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/project/9LRHtEYIhLRgDpZIv99hY9#representanteJurídicoDe">
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/project/9LRHtEYIhLRgDpZIv99hY9#relacionPersonaPersona"/>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/project/9LRHtEYIhLRgDpZIv99hY9#retenidoJuntoCon -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/project/9LRHtEYIhLRgDpZIv99hY9#retenidoJuntoCon">
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/project/9LRHtEYIhLRgDpZIv99hY9#relacionPersonaPersona"/>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/project/9LRHtEYIhLRgDpZIv99hY9#subordinadoA -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/project/9LRHtEYIhLRgDpZIv99hY9#subordinadoA">
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/project/9LRHtEYIhLRgDpZIv99hY9#relacionPersonaPersona"/>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/project/9LRHtEYIhLRgDpZIv99hY9#victimarioDe -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/project/9LRHtEYIhLRgDpZIv99hY9#victimarioDe">
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/project/9LRHtEYIhLRgDpZIv99hY9#relacionPersonaPersona"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/roberts/family-tree.owl#Person -->
+
+    <rdf:Description rdf:about="http://www.co-ode.org/roberts/family-tree.owl#Person"/>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

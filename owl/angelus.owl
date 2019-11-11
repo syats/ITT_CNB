@@ -47,7 +47,6 @@
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="http://webprotege.stanford.edu/project/9LRHtEYIhLRgDpZIv99hY9#relacionEventoEvento"/>
-                    <rdf:Description rdf:about="http://webprotege.stanford.edu/project/9LRHtEYIhLRgDpZIv99hY9#relacionEventoExpediente"/>
                     <rdf:Description rdf:about="http://webprotege.stanford.edu/project/9LRHtEYIhLRgDpZIv99hY9#relacionLugarEvento"/>
                     <rdf:Description rdf:about="http://webprotege.stanford.edu/project/9LRHtEYIhLRgDpZIv99hY9#relacionOrganizaciónEvento"/>
                     <rdf:Description rdf:about="http://webprotege.stanford.edu/project/9LRHtEYIhLRgDpZIv99hY9#relacionPersonaEvento"/>
@@ -86,8 +85,6 @@
         <rdfs:domain>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://webprotege.stanford.edu/project/9LRHtEYIhLRgDpZIv99hY9#relacionLugarEvento"/>
-                    <rdf:Description rdf:about="http://webprotege.stanford.edu/project/9LRHtEYIhLRgDpZIv99hY9#relacionLugarExpediente"/>
                     <rdf:Description rdf:about="http://webprotege.stanford.edu/project/9LRHtEYIhLRgDpZIv99hY9#relacionLugarLugar"/>
                     <rdf:Description rdf:about="http://webprotege.stanford.edu/project/9LRHtEYIhLRgDpZIv99hY9#relacionOrganizaciónLugar"/>
                     <rdf:Description rdf:about="http://webprotege.stanford.edu/project/9LRHtEYIhLRgDpZIv99hY9#relacionPersonaLugar"/>
@@ -106,9 +103,6 @@
         <rdfs:domain>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://webprotege.stanford.edu/project/9LRHtEYIhLRgDpZIv99hY9#relacionOrganizaciónEvento"/>
-                    <rdf:Description rdf:about="http://webprotege.stanford.edu/project/9LRHtEYIhLRgDpZIv99hY9#relacionOrganizaciónExpediente"/>
-                    <rdf:Description rdf:about="http://webprotege.stanford.edu/project/9LRHtEYIhLRgDpZIv99hY9#relacionOrganizaciónLugar"/>
                     <rdf:Description rdf:about="http://webprotege.stanford.edu/project/9LRHtEYIhLRgDpZIv99hY9#relacionOrganizaciónOrganización"/>
                     <rdf:Description rdf:about="http://webprotege.stanford.edu/project/9LRHtEYIhLRgDpZIv99hY9#relacionPersonaOrganizacion"/>
                 </owl:unionOf>
@@ -123,17 +117,7 @@
 
     <owl:ObjectProperty rdf:about="http://webprotege.stanford.edu/project/9LRHtEYIhLRgDpZIv99hY9#tieneObjetoPersona">
         <rdfs:subPropertyOf rdf:resource="http://webprotege.stanford.edu/project/9LRHtEYIhLRgDpZIv99hY9#tieneObjeto"/>
-        <rdfs:domain>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://webprotege.stanford.edu/project/9LRHtEYIhLRgDpZIv99hY9#relacionPersonaEvento"/>
-                    <rdf:Description rdf:about="http://webprotege.stanford.edu/project/9LRHtEYIhLRgDpZIv99hY9#relacionPersonaExpediente"/>
-                    <rdf:Description rdf:about="http://webprotege.stanford.edu/project/9LRHtEYIhLRgDpZIv99hY9#relacionPersonaLugar"/>
-                    <rdf:Description rdf:about="http://webprotege.stanford.edu/project/9LRHtEYIhLRgDpZIv99hY9#relacionPersonaOrganizacion"/>
-                    <rdf:Description rdf:about="http://webprotege.stanford.edu/project/9LRHtEYIhLRgDpZIv99hY9#relacionPersonaPersona"/>
-                </owl:unionOf>
-            </owl:Class>
-        </rdfs:domain>
+        <rdfs:domain rdf:resource="http://webprotege.stanford.edu/project/9LRHtEYIhLRgDpZIv99hY9#relacionPersonaPersona"/>
         <rdfs:range rdf:resource="http://vocabularios.ccd.conacyt.mx/angelus/Persona"/>
     </owl:ObjectProperty>
     
@@ -156,9 +140,6 @@
                 <owl:unionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="http://webprotege.stanford.edu/project/9LRHtEYIhLRgDpZIv99hY9#relacionEventoEvento"/>
                     <rdf:Description rdf:about="http://webprotege.stanford.edu/project/9LRHtEYIhLRgDpZIv99hY9#relacionEventoExpediente"/>
-                    <rdf:Description rdf:about="http://webprotege.stanford.edu/project/9LRHtEYIhLRgDpZIv99hY9#relacionLugarEvento"/>
-                    <rdf:Description rdf:about="http://webprotege.stanford.edu/project/9LRHtEYIhLRgDpZIv99hY9#relacionOrganizaciónEvento"/>
-                    <rdf:Description rdf:about="http://webprotege.stanford.edu/project/9LRHtEYIhLRgDpZIv99hY9#relacionPersonaEvento"/>
                 </owl:unionOf>
             </owl:Class>
         </rdfs:domain>
@@ -171,17 +152,7 @@
 
     <owl:ObjectProperty rdf:about="http://webprotege.stanford.edu/project/9LRHtEYIhLRgDpZIv99hY9#tieneSujetoExpediente">
         <rdfs:subPropertyOf rdf:resource="http://webprotege.stanford.edu/project/9LRHtEYIhLRgDpZIv99hY9#tieneSujeto"/>
-        <rdfs:domain>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://webprotege.stanford.edu/project/9LRHtEYIhLRgDpZIv99hY9#relacionEventoExpediente"/>
-                    <rdf:Description rdf:about="http://webprotege.stanford.edu/project/9LRHtEYIhLRgDpZIv99hY9#relacionExpedienteExpediente"/>
-                    <rdf:Description rdf:about="http://webprotege.stanford.edu/project/9LRHtEYIhLRgDpZIv99hY9#relacionLugarExpediente"/>
-                    <rdf:Description rdf:about="http://webprotege.stanford.edu/project/9LRHtEYIhLRgDpZIv99hY9#relacionOrganizaciónExpediente"/>
-                    <rdf:Description rdf:about="http://webprotege.stanford.edu/project/9LRHtEYIhLRgDpZIv99hY9#relacionPersonaExpediente"/>
-                </owl:unionOf>
-            </owl:Class>
-        </rdfs:domain>
+        <rdfs:domain rdf:resource="http://webprotege.stanford.edu/project/9LRHtEYIhLRgDpZIv99hY9#relacionExpedienteExpediente"/>
         <rdfs:range rdf:resource="http://vocabularios.ccd.conacyt.mx/angelus/Expediente"/>
     </owl:ObjectProperty>
     

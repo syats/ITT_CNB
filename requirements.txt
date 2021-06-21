@@ -2,3 +2,4 @@ matplotlib
 pytesseract
 pillow
 numpy
+pypdf2

@@ -1,4 +1,33 @@
-# Preprocesamiento de expendientes guerra sucia
+# Preprocesamiento de expendientes
+
+
+## Para el caso de PDFs hechos de scanneres/cámaras, sin anotaciones (e.g. AGN)
+Make sure you have installed the following ubuntu/debian packages
+`sudo apt update ; sudo apt install imagemagick poppler-utils rename`
+
+0. Create two directories: `Monopagina` and `Multipagina`
+
+1. Put the multipage PDFs in `Multipagina`
+
+2. Create directories for each
+`ls *pdf | sed -e 's/ /_/g' | awk '{print "mkdir \"../Monopagina/" $0 "/\""}' | sed 's/.pdf//g' | bash`
+
+
+3. Convert
+`ls *pdf | sed 's/.pdf//g' | awk '{print "pdfimages -j \"" $0 ".pdf\"  \"../Monopagina/" $0 "/\""'} | bash`
+
+
+4. Rename
+`ls *pdf |   sed 's/.pdf//g' | awk '{print "cd \"../Monopagina/" $0 "\" ; for filename in *.jpg; do mv -- \"$filename\"  \"" $0 "_pg$filename\"; done;   cd -"   }' | bash`
+
+
+5 Put into single folder. If you want all JPEGs to be in a single folder, do:
+`ls *pdf |   sed 's/.pdf//g' | awk '{print "cd \"../Monopagina/" $0 "\" ; for filename in *.jpg; do mv -- \"$filename\"  ..; done;   cd -"   }' | bash`
+5.1 Delete empty folders
+`cd ../Monopagina ; find . -type d -empty -delete`
+
+
+## Para el caso de PDFs con índices y anotaciones (e.g. del caso Radilla)
 
 ### Input: 
 1. archivos pdf con muchos documentos y bookmarks por documento
